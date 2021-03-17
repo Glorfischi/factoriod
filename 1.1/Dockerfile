@@ -30,7 +30,7 @@ RUN groupadd --gid 845 --system factorio \
 		--uid 845 \
 		factorio
 
-COPY --from=build /opt/factorio /opt/factorio
+COPY --from=build /opt /opt
 VOLUME ["/opt/factorio/saves"]
 
 USER factorio
