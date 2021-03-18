@@ -24,8 +24,8 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: "./1.1"
-          file: "./1.1/Dockerfile"
+          context: "./container/1.1"
+          file: "./container/1.1/Dockerfile"
           push: true
           tags: glorfischi/factoriod:latest, glorfischi/factoriod:1.1, glorfischi/factoriod:1.1.27
       - name: Image digest
